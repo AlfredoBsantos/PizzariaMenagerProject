@@ -33,6 +33,10 @@ O **Pizzaria Management System** é um projeto desenvolvido em **JavaFX**, estru
 
 ### **Banco de Dados**
 - **SQLite**: Banco de dados local para armazenamento de informações como itens de estoque, usuários e pedidos.
+- 
+### **Diagrama de entidade e relacionamento**
+
+![DER_project](https://github.com/user-attachments/assets/4df1d598-d2f8-4040-873c-1cdefdbe8baf)
 
 ---
 
