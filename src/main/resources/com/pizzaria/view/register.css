@@ -1,0 +1,65 @@
+/* Geral */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f9f9f9;
+}
+
+/* Título */
+.label {
+    -fx-text-fill: #333;
+}
+
+.label:first-of-type {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007bff;
+}
+
+/* Campos de texto */
+.text-field, .password-field {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 2px;
+}
+
+/* Botões */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#registerButton {
+    -fx-background-color: #28a745;
+}
+
+#registerButton:hover {
+    -fx-background-color: #218838;
+}
+
+#backButton {
+    -fx-background-color: #6c757d;
+}
+
+#backButton:hover {
+    -fx-background-color: #5a6268;
+}
+
+/* Label de erro */
+#errorLabel {
+    -fx-font-size: 12px;
+    -fx-text-fill: red;
+    -fx-font-style: italic;
+}

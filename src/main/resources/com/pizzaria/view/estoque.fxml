@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.pizzaria.EstoqueController">
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="15.0" prefWidth="600.0" prefHeight="400.0" layoutX="20.0" layoutY="20.0">
+            <!-- Título da Tela -->
+            <Label text="Gerenciamento de Estoque" style="-fx-font-size: 20px; -fx-font-weight: bold;" alignment="CENTER" />
+
+            <!-- Formulário para Entrada de Dados do Estoque -->
+            <VBox spacing="10.0" alignment="CENTER">
+                <HBox spacing="10.0" alignment="CENTER_LEFT">
+                    <Label text="Nome do Produto:" />
+                    <TextField fx:id="nomeProdutoField" promptText="Digite o nome do produto" />
+                </HBox>
+                <HBox spacing="10.0" alignment="CENTER_LEFT">
+                    <Label text="Quantidade:" />
+                    <TextField fx:id="quantidadeField" promptText="Digite a quantidade" />
+                </HBox>
+                <HBox spacing="10.0" alignment="CENTER_LEFT">
+                    <Label text="Preço:" />
+                    <TextField fx:id="precoField" promptText="Digite o preço (R$)" />
+                </HBox>
+            </VBox>
+
+            <!-- Botões de Controle -->
+            <HBox spacing="10.0" alignment="CENTER">
+                <Button text="Adicionar Produto" onAction="#adicionarProduto" />
+                <Button text="Remover Produto" onAction="#removerProduto" />
+                <Button text="Voltar" onAction="#voltar" />
+            </HBox>
+
+            <!-- Tabela de Estoque -->
+            <TableView fx:id="tabelaEstoque" prefHeight="200.0" prefWidth="580.0">
+                <columns>
+                    <TableColumn text="Produto" prefWidth="180.0" />
+                    <TableColumn text="Quantidade" prefWidth="100.0" />
+                    <TableColumn text="Preço (R$)" prefWidth="100.0" />
+                </columns>
+            </TableView>
+        </VBox>
+    </children>
+</AnchorPane>

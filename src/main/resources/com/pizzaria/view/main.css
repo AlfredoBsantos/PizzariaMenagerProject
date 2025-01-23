@@ -1,0 +1,122 @@
+/* Layout geral */
+GridPane {
+    -fx-padding: 20;
+    -fx-background-color: #f9f9f9;
+}
+
+/* Campo de busca */
+.search-field {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-padding: 8;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #ccc;
+    -fx-background-color: #fff;
+}
+
+.search-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.search-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+/* Lista de categorias */
+.category-list {
+    -fx-pref-width: 200px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-padding: 5;
+}
+
+/* Grid de produtos */
+.product-list {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-pref-height: 400px;
+}
+
+/* Exibição da imagem do produto */
+.image-container {
+    -fx-padding: 10;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-background-color: #fff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.product-image-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Carrinho */
+.cart-container {
+    -fx-padding: 10;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: #fff;
+}
+
+.cart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.cart-list {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-pref-height: 200px;
+}
+
+.total-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.checkout-button {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.checkout-button:hover {
+    -fx-background-color: #218838;
+}
+
+/* Botões especiais */
+.crud-button {
+    -fx-background-color: linear-gradient(to right, #FF8C00, #FF6347);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.logout-button {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.logout-button:hover {
+    -fx-background-color: #bd2130;
+}

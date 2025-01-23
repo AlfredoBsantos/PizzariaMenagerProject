@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane  stylesheets="@register.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pizzaria.RegisterController">
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+
+            <!-- Title -->
+            <Label text="Registro" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+            <!-- Username Field -->
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Username:" />
+                <TextField fx:id="usernameField" promptText="Enter a username" />
+            </HBox>
+
+            <!-- Password Field -->
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Password:" />
+                <PasswordField fx:id="passwordField" promptText="Enter a password" />
+            </HBox>
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER" spacing="15">
+                <Button fx:id="registerButton" text="Registrar" onAction="#handleRegister" />
+                <Button fx:id="backButton" text="Voltar" onAction="#handleBack" />
+            </HBox>
+
+            <!-- Error Label -->
+            <Label fx:id="errorLabel" textFill="red" visible="false" />
+        </VBox>
+    </center>
+</BorderPane>

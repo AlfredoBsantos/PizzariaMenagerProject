@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pizzaria.PaymentPopupController" spacing="20">
+    <!-- Define o padding corretamente com Insets -->
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <!-- Exibe o valor total da compra -->
+    <Label fx:id="totalAmountLabel" text="Total: R$ 0.00" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <!-- Seção de forma de pagamento -->
+    <Label text="Escolha a forma de pagamento:" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+    <ComboBox fx:id="paymentMethodComboBox" promptText="Selecione uma forma de pagamento" style="-fx-font-size: 14px;" />
+
+    <!-- Seção de opção de cadastro de novo cliente -->
+    <CheckBox fx:id="newClientCheckBox" text="Novo Cliente" style="-fx-font-size: 14px;" onAction="#handleNewClientCheckBox" />
+
+    <!-- Campo para inserir o nome do novo cliente, visível somente se o checkbox estiver marcado -->
+    <TextField fx:id="clientNameTextField" promptText="Digite o nome do cliente" style="-fx-font-size: 14px;" visible="false" />
+
+    <!-- Seção de seleção do cliente, visível apenas se o checkbox não estiver marcado -->
+    <Label text="Escolha o cliente:" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+    <ComboBox fx:id="clientComboBox" promptText="Selecione um cliente" style="-fx-font-size: 14px;" visible="false" />
+
+    <!-- Botão para finalizar pedido -->
+    <Button text="Finalizar Pedido" fx:id="confirmButton" onAction="#handleConfirm" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+</VBox>

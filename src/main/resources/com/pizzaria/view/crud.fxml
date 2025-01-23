@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.pizzaria.CrudController" stylesheets="@crud.css">
+    <!-- Cabeçalho -->
+    <top>
+        <HBox alignment="CENTER" spacing="10" styleClass="header">
+            <Label text="TABELA DE PRODUTOS" styleClass="header-title" />
+        </HBox>
+    </top>
+
+    <!-- Formulário de cadastro de produto -->
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <GridPane alignment="CENTER" hgap="10" vgap="10">
+                <!-- Nome -->
+                <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="txtNome" promptText="Digite o nome" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <!-- Descrição -->
+                <Label text="Descrição:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="txtDescricao" promptText="Digite a descrição" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <!-- Preço -->
+                <Label text="Preço:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="txtPreco" promptText="Digite o preço" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <!-- Estoque -->
+                <Label text="Estoque:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="txtEstoque" promptText="Digite o estoque" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <!-- Imagem -->
+                <Label text="Imagem:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <Button text="Selecionar Imagem" onAction="#onEscolherImagem" styleClass="action-button" />
+                    <TextField fx:id="txtImagem" editable="false" promptText="Caminho da imagem" />
+                </HBox>
+
+                <!-- Categoria -->
+                <Label text="Categoria:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <ComboBox fx:id="cmbCategoria" promptText="Selecione uma categoria" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            </GridPane>
+
+            <!-- Botões de ação -->
+            <HBox alignment="CENTER" spacing="10">
+                <Button onAction="#onSalvar" text="Salvar" styleClass="primary-button" />
+                <Button onAction="#onExcluir" text="Excluir" styleClass="danger-button" />
+                <Button onAction="#onInserir" text="Inserir" styleClass="primary-button" />
+                <Button onAction="#onVoltar" text="Voltar" styleClass="secondary-button" />
+            </HBox>
+        </VBox>
+    </center>
+
+    <!-- Tabela de produtos -->
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" styleClass="table-container">
+            <TableView fx:id="tableProdutos" prefHeight="250" styleClass="styled-table">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" />
+                    <TableColumn fx:id="colNome" text="Nome" />
+                    <TableColumn fx:id="colDescricao" text="Descrição" />
+                    <TableColumn fx:id="colPreco" text="Preço" />
+                    <TableColumn fx:id="colEstoque" text="Estoque" />
+                    <TableColumn fx:id="colImagem" text="Imagem" />
+                    <TableColumn fx:id="colCategoria" text="Categoria" />
+                </columns>
+            </TableView>
+        </VBox>
+    </bottom>
+</BorderPane>

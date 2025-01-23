@@ -1,0 +1,17 @@
+# Configurações locais de IDE
+.idea/
+.vscode/
+
+# SDK
+javafx-sdk-*/
+
+# Diretório de build
+target/
+
+# Arquivos de banco de dados
+*.db
+*.sqlite
+
+# Outros
+.DS_Store  # Arquivo gerado pelo macOS (caso use)
+Thumbs.db  # Arquivo gerado pelo Windows

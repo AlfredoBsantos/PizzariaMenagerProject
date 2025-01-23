@@ -1,0 +1,63 @@
+/* General Styles */
+.login-container {
+    -fx-padding: 30;
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+.login-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10 0 20 0;
+}
+
+.input-container {
+    -fx-padding: 5;
+}
+
+.input-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+.input-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: #ffffff;
+    -fx-focus-color: #6a9ae2;
+}
+
+.button-container {
+    -fx-padding: 10 0 0 0;
+}
+
+.login-button, .register-button {
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: #6a9ae2;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.register-button {
+    -fx-background-color: #999999;
+}
+
+.login-button:hover, .register-button:hover {
+    -fx-background-color: #5588c4;
+}
+
+.error-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: red;
+    -fx-padding: 10 0 0 0;
+}
